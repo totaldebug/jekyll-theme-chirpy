@@ -1551,3 +1551,12 @@ search {
     }
   }
 } /* min-width: 1650px */
+strong {
+  background-color: var(--highlighter-rouge-color);
+  font-weight: normal !important;
+  color: var(--main-bg);
+  display: inline-block;
+  transform: rotate(-1deg);
+  padding-left: 2px !important;
+  padding-right: 3px !important;
+}
