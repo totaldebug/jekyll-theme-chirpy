@@ -31,7 +31,7 @@ tail_includes:
       {% endif %}
 
       {% if page.image %}
-        {% capture src %}src="/assets/img/posts/{{ page.slug }}{{ page.image.name | default: page.image }}"{% endcapture %}
+        {% capture src %}src="/assets/img/posts/{{ page.slug }}/{{ page.image.name | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
 
