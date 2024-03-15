@@ -35,12 +35,12 @@
     {%- endcapture -%}
 
     {%- capture og_image -%}
-      <meta property="og:image" content="/assets/img/posts/{{ page.slug }}/{{ img_url }}" />
+      <meta property="og:image" content="{{ img_url }}" />
     {%- endcapture -%}
 
     {%- capture twitter_image -%}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:image" content="/assets/img/posts/{{ page.slug }}/{{ img_url }}" />
+      <meta property="twitter:image" content="{{ img_url }}" />
     {%- endcapture -%}
 
     {% assign old_meta_clip = '<meta name="twitter:card" content="summary" />' %}
